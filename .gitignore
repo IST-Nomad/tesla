@@ -3,14 +3,14 @@
 # dependencies
 /node_modules
 /app/doc
-/app/font
-/app/images
+*/fonts
+*/images
 # testing
 /coverage
 *.fig
 *.psd
 # production
-/build
+/dist
 package-lock.json
 
 # misc

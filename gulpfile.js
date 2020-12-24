@@ -49,7 +49,7 @@ function scripts() {
 }
 
 function styles() {
-    return src('app/scss/style.scss')
+    return src('app/css/style.css')
     .pipe(scss({outputStyle: 'compressed'}))
     .pipe(concat('style.min.css'))
     .pipe(autoprefixer({
@@ -64,14 +64,14 @@ function build() {
     return src([
         'app/css/*.css',
         'app/fonts/**/*',
-        'app/js/main.min.js',
+        'app/js/*.js',
         'app/*.html'
     ], {base: 'app'})
     .pipe(dest('dist'))
 }
 
 function watching() {
-    watch(['app/scss/**/*.scss'], styles);
+    watch(['app/css/style.css'], styles);
     watch(['app/js/main.js'], scripts);
     watch(['app/*.html']).on('change', browserSync.reload);
 }
