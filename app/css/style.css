@@ -169,7 +169,8 @@ body {
     margin: -55px auto 0;
     position: relative;
     z-index: 6;
-    max-width: 1200px;
+    max-width: 1230px;
+    padding: 0 15px;
 }
 
 .statistics {
@@ -286,4 +287,36 @@ body {
     content: "|";
     position: absolute;
     left: -5px;
+}
+
+    /* ! Адаптив */
+
+
+
+
+@media(max-width: 410px) {
+    .logo img{
+        width: 200px;
+    }
+    .header-content__title{
+        font-size: 70px;
+        line-height: 85px;
+        margin-bottom: 0;
+    }
+    .menu__list a{
+        font-size: 30px;
+        line-height: 44px;
+        padding: 12px 10px 7px 0;
+        display: block;
+        min-width: 100%;
+    }
+    .menu__list ul{
+        width: 100%;
+    }
+    .button{
+        padding: 18px 50px;
+    }
+    .slider .slick-dots{
+        margin: -54px 19px;
+    }
 }
