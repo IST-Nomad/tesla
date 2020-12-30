@@ -292,7 +292,14 @@ body {
     /* ! Адаптив */
 
 
-
+@media(max-width: 820px){
+    .statistics-items{
+        flex-wrap: wrap;
+    }
+    .statistics-item{
+        padding: 50px;
+    }
+}
 
 @media(max-width: 410px) {
     .logo img{
